@@ -1,0 +1,14 @@
+// Threads 
+
+class Mohan extends Thread {
+public void run(){
+System.out.println("this is the first thread");
+}
+}
+
+class main {
+public static void main (String args[]){
+Mohan moh = new Mohan();
+Thread t1 = new Thread (moh);
+}
+}
